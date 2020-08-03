@@ -17,6 +17,7 @@
 <br>
 Установите секретный ключь и введите данные дя подключении к базе данных.
 <pre>
+
 SECRET_KEY = 'There is a secret key'
 """SETTING MySQL"""
 
@@ -25,3 +26,18 @@ db_login = 'mysql server login'
 db_password = 'mysql server password'
 db_name = 'mysql server basedata name'
 </pre>
+
+Далее нужно создать таблицы в базе данных
+<br>
+Выполняем команды которые приведены ниже
+<pre>
+python3 manage.py makemigrations
+python3 manage.py migrate
+</pre>
+Затем создаём профиль для администратора
+<pre>
+python3 manage.py createsuperuser
+</pre>
+
+После устновки при попытке зайти на сайт вас будет перебрасывать на страницу администратора.
+Вам надо будет полностью настроить сайт что бы он заработал.
