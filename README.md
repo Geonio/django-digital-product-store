@@ -1,2 +1,2 @@
-![alt tag](https://prnt.sc/ttgdgb "Главная страница сайта")​
+![alt text](Screenshot_1.png "Главная страница сайта")​
 
