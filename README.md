@@ -1,1 +1,2 @@
-"# django-digital-product-store" 
+![alt tag](https://prnt.sc/ttgdgb "Главная страница сайта")​
+
