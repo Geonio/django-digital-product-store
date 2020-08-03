@@ -23,6 +23,9 @@
 <pre>
 
 SECRET_KEY = 'There is a secret key'
+
+domain = 'site domain'
+
 """SETTING MySQL"""
 
 db_host = 'mysql server ip address'
