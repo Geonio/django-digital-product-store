@@ -10,11 +10,12 @@
 <h4>Установка и настройки</h4>
 
 Выполните команду 
-<ul>
-  <li>pip3 install -r requirements.txt</li>
-</ul>
+<pre>pip3 install -r requirements.txt</pre>
 <br>
-В самом проекте отредактируйте файл <pre>config.py</pre>,<br>установите секретный ключь и введите данные к подключении к базе данных
+В самом проекте отредактируйте файл
+<pre>config.py</pre>
+<br>
+Установите секретный ключь и введите данные дя подключении к базе данных.
 <pre>
 SECRET_KEY = 'There is a secret key'
 """SETTING MySQL"""
