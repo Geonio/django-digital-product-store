@@ -16,13 +16,9 @@
     <!-- Custom fixes for django -->
     <link rel="stylesheet" href="/static/jazzmin/css/django.css">
 
-    
-
+   
     <!-- Google Font: Source Sans Pro -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-     
-
-    
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet"> 
      
     <script type="text/javascript" src="/admin/jsi18n/"></script>
     <script src="/static/admin/js/vendor/jquery/jquery.js"></script>
@@ -105,7 +101,7 @@
                         </div>
                         <div class="info">
                             
-                                <a href="/admin/auth/user/1/change/" class="d-block">admin</a>
+                                <a href="/admin/auth/user/{{request.user.id}}/change/" class="d-block">{{request.user.username}}</a>
                             
                         </div>
                     </div>
