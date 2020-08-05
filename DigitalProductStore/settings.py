@@ -1,5 +1,5 @@
 import os
-from config import *
+import config as conf
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -65,7 +65,7 @@ WSGI_APPLICATION = 'DigitalProductStore.wsgi.application'
 
 
 
-
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -73,18 +73,19 @@ DATABASES = {
     }
 }
 
-
 """
+
+
 DATABASES = {
     'default':{
         'ENGINE':'django.db.backends.mysql',
-        'HOST':db_host,
-        'USER':db_login,
-        'PASSWORD':db_password,
-        'NAME':db_name,
+        'HOST':conf.db_host,
+        'USER':conf.db_login,
+        'PASSWORD':conf.db_password,
+        'NAME':conf.db_name,
     }
 }
-"""
+
 
 
 # Password validation
